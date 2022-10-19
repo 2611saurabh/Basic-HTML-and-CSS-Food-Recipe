@@ -1,0 +1,88 @@
+body{
+	font-family: 'Bebas Neue', cursive;
+	margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+/* utility classes*/
+.img-responsize{
+	max-width: 100%;
+}
+
+.hero_image{
+	background-image:url(heroimage.jpg);
+	height: 100vh;
+	background-size: cover;
+	position: relative;
+	
+
+
+}	
+
+
+.hero_wrapper{
+	color: white;
+	position: absolute;
+	/* left and right used for creating distance from left and right margin */
+	/* to move the div in center */
+	left: 50%;
+	top: 50%;
+	/*but when we make it center it not apply with actual width and height so we use transform*/
+	transform: translate(-50%,50%);
+	margin-left: 0px;
+
+}
+.h_1{
+	color: #DD5353;
+	font-size: 2.4rem;
+	text-align: center;
+}
+.frm{
+	text-align: center;
+}
+
+.frm .post_code{
+	display: block;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 2rem;
+	padding: .6rem;
+	border: none;
+	outline: none;
+}
+.frm button{
+	width: 40%;
+	text-align: center;
+	background-color: blue;
+	color: white;
+	padding: .6rem;
+	margin:1rem auto 0rem;
+	border-radius: .3rem;
+	border: none;
+}
+/* Product section */
+.product{
+	margin-top: .3rem;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.product_list_item{
+	float: left;
+	width: 32%;
+	margin-left: .5rem;
+
+}
+.product_list_item :first-of-type{/* first-of-type meanse
+it select first class of product_item_ist  */
+	margin-left: 0;
+}
+
+@media screen and (max-width: 700px){
+	.product_list_item{
+		width: 100%;
+		float: none;
+	}
+}
